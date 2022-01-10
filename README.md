@@ -9,6 +9,8 @@ checked out here:
 Python knowledge to be able to call the functions and basic knowledge of the Mandelbrot
 and Julia sets are recommended. Numpy and matplotlib libraries are necessary:
 
-'pip3 upgrade
+```
+pip3 upgrade
 pip3 install numpy
-pip3 install matplotlib'
+pip3 install matplotlib
+```
