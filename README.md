@@ -2,7 +2,9 @@
 
 This simple functions create simple plots of the Julia and Mandelbrot sets. The Julia set require the important parameter
 for the equation C, the rest is pretty straightforward. I have added some examples and the images generated from them can be
-checked out here:
+checked out [here](https://drive.google.com/drive/folders/1pUbFgtscqd0Rr_kTHJrHg09fBzkUf_8A?usp=sharing).
+
+
 
 ## Prerequisites
 
