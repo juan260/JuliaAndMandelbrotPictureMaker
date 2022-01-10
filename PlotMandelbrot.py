@@ -28,10 +28,10 @@ def plotMandelbrot(zinit, name='plot.png', pixdens=1000, im_width=4000, im_heigh
     fig, ax = plt.subplots()
     ax.imshow(julia, interpolation='nearest', cmap=cm.bone)
     # Set the tick labels to the coordinates of z0 in the complex plane
-    xtick_labels = np.linspace(xmin, xmax, xwidth / 0.5)
+    xtick_labels = np.linspace(xmin, xmax, np.round(xwidth / 0.5).astype(int))
     ax.set_xticks([(x-xmin) / xwidth * im_width for x in xtick_labels])
     ax.set_xticklabels(['{:.1f}'.format(xtick) for xtick in xtick_labels])
-    ytick_labels = np.linspace(ymin, ymax, yheight / 0.5)
+    ytick_labels = np.linspace(ymin, ymax, np.round(yheight / 0.5).astype(int))
     ax.set_yticks([(y-ymin) / yheight * im_height for y in ytick_labels])
     ax.set_yticklabels(['{:.1f}'.format(ytick) for ytick in ytick_labels])
     plt.savefig(name, dpi=pixdens)
